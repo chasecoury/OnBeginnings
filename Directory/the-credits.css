@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: scotch-display;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #fading-text {
+    max-width: 800px;
+    text-align: left;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+  }
+
+  
+  .next-link {
+    text-decoration: none;
+    font-family: scotch-display;
+    font-weight: 900;
+    position: absolute;
+    bottom: 100px;
+    right: 260px;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+    color: black;
+
+  }
+
+  .next-link:hover{
+    color: rgb(56, 82, 251);
+    transition: color 0.5s;
+  }
+  .back-link {
+    text-decoration: none;
+    font-family: scotch-display;
+    font-weight: 900;
+    position: absolute;
+    bottom: 77px;
+    right: 253px;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+    color: black;
+
+  }
+
+  .back-link:hover{
+    color: rgb(56, 82, 251);
+    transition: color 0.5s;
+  }
+  
+  .chapters-link {
+    text-decoration: none;
+    font-family: scotch-display;
+    font-weight: 900;
+    position: absolute;
+    bottom: 40px;
+    right: 220px;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+    color: black;
+
+  }
+
+  .chapters-link:hover{
+    color: rgb(56, 82, 251);
+    transition: color 0.5s;
+  }
+
+  .ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+    animation: fadeIn 3s ease forwards;
+  }
+
+  .chaptername {
+    font-family: scotch-display;
+    font-size: 180px;
+    position: fixed;
+    margin-bottom: 600px;
+    z-index: -9999; /* Places the div above everything else */
+    color: rgb(228, 228, 228); /* Make text transparent */
+    animation: fadeIn 10s ease forwards;
+  }
+  
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
